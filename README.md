@@ -1,1 +1,1 @@
-# lcr-simulation
+# LCR Circuit Simulation in Python
