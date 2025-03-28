@@ -121,25 +121,3 @@ if __name__ == "__main__":
   t_eval = np.linspace(t_span[0], t_span[1], 1000)
   plot_lcr(sol, t_eval,omega)
 
-import numpy as np
-import matplotlib.pyplot as plt
-X = np.linspace(0, 10*np.pi, 100)
-Y1,Y2 = np.sin(X), np.cos(X)
-fig1, ax = plt.subplots()
-ax.plot(X, Y1, color='blue', linewidth = 1, marker = 'o', linestyle = '--')
-fig2, bx = plt.subplots()
-bx.plot(X, Y2, color='C1', linewidth = 1, marker = 'o', linestyle = '--')
-
-ax.set_xlabel('Time')
-ax.set_ylabel(None)
-ax.set_title('Sine-Cosine Graph')
-ax.annotate('A', (0, 0), (0,-0.25), ha = 'center', va = 'center', arrowprops = {'arrowstyle': "->", 'color': 'C3'})
-ax.legend(['Sine'], loc = 'upper right')
-bx.legend(['Cosine'], loc = 'upper right')
-ax.grid(True)
-bx.grid(True)
-
-
-plt.show()
-
-fig.savefig("sin-cos.png", dpi = 300)
