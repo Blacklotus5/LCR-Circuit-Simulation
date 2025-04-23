@@ -6,7 +6,7 @@
 # Libraries Used
 - numpy (For numerical calculations)
 - matplotlib (To plot graph)
-- pytk (Tkinter used to make graph)
+- pytk (Tkinter used to make gui)
 - scipy (For solving initial value problem)
 - customtkinter (Customised version for modern look)
 
